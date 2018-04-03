@@ -1,0 +1,252 @@
+<!--
+  Generated template for the PostAddPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons no margin>
+      <button ion-button icon-only>
+        <ion-icon name="mail"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="heart-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h3>Add a new Campaign!</h3>
+<ion-grid>
+  <ion-row>
+    <ion-col col-6>
+      <span>Name</span><input class="input_field" style="padding-left:0px" type="text" value="">
+      
+    </ion-col>
+    <ion-col col-2>
+      <span>Sector</span>
+        
+    </ion-col>
+    <ion-col col-4>
+        <ion-select [(ngModel)]="gender" class="select_menu">
+            <ion-option value="f">Female</ion-option>
+            <ion-option value="m">Male</ion-option>
+          </ion-select>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    <h6>Campaign Medium</h6>
+    <ion-grid>
+      <ion-row>
+          <ion-col center col-2  class="large_icon">
+              <img src="../../assets/icon/icons/036-facebook.png" class="social_icons select_social_icons">
+            </ion-col>
+            <ion-col center col-2  class="large_icon">
+                <img src="../../assets/icon/icons/029-instagram.png" class="social_icons select_social_icons">
+              </ion-col>
+              <ion-col center col-2  class="large_icon">
+                  <img src="../../assets/icon/icons/027-linkedin.png" class="social_icons">
+                </ion-col>
+                <ion-col center col-2  class="large_icon">
+                    <img src="../../assets/icon/icons/001-youtube.png" class="social_icons">
+                  </ion-col>
+                  <ion-col center col-2  class="large_icon">
+                      <img src="../../assets/icon/icons/008-twitter.png" class="social_icons">
+                    </ion-col>
+                    <ion-col center col-2  class="large_icon">
+                        <img src="../../assets/icon/icons/036-facebook.png" class="social_icons">
+                      </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h6>Campaign Dates</h6>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-1.5>
+            <span>Start</span>
+            
+          </ion-col>
+          <ion-col col-3>
+              <ion-select [(ngModel)]="gender" class="select_menu">
+                  <ion-option value="f">Female</ion-option>
+                  <ion-option value="m">Male</ion-option>
+                </ion-select>
+              
+          </ion-col>
+          <ion-col col-1.5>
+              <span>End</span>
+          </ion-col>
+          <ion-col col-3>
+              <ion-select [(ngModel)]="gender" class="select_menu">
+                  <ion-option value="f">Female</ion-option>
+                  <ion-option value="m">Male</ion-option>
+                </ion-select>
+              
+          </ion-col>
+          <ion-col col-3>
+              <ion-select [(ngModel)]="gender" class="select_menu">
+                  <ion-option value="f">Female</ion-option>
+                  <ion-option value="m">Male</ion-option>
+                </ion-select>
+              
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <h5>Campaign Specifics</h5>
+      <h6>Influencers Required</h6>
+      <ion-grid class="influencers_row">
+        <ion-row class="influencers_row">
+          <ion-col col-6 class="influencers_row">
+            <ion-row>  
+              <ion-col col-6  class="large_icon">
+                  <img src="../../assets/icon/icons/036-facebook.png" class="social_icons">
+                </ion-col>
+                <ion-col col-6>
+                    <ion-select [(ngModel)]="gender" class="select_menu">
+                        <ion-option value="f">Female</ion-option>
+                        <ion-option value="m">Male</ion-option>
+                      </ion-select>
+                    
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-9>
+                  Min Followers
+
+                </ion-col>
+           
+                   <ion-col col-3>
+                        <ion-select [(ngModel)]="gender" class="select_menu">
+                            <ion-option value="f">Female</ion-option>
+                            <ion-option value="m">Male</ion-option>
+                          </ion-select>
+                        
+                    </ion-col>
+             
+              </ion-row>
+              <ion-row>  
+                  <ion-col col-9 >
+                    Max Followers
+                    </ion-col>
+                    <ion-col col-3>
+                        <ion-select [(ngModel)]="gender" class="select_menu">
+                            <ion-option value="f">Female</ion-option>
+                            <ion-option value="m">Male</ion-option>
+                          </ion-select>
+                        
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>  
+                      <ion-col col-10 >
+                        Engagements/Day
+                        </ion-col>
+                        <ion-col col-2>
+                            
+                            <input class="input_field" style="padding-left:0px;width:100%" type="text" value="">
+                        </ion-col>
+                      </ion-row>
+                      <ion-row>  
+                        <ion-row>
+                          <ion-col col-12 >
+                            Minimum Budget Req.
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col col-12>
+                                
+                                <input class="input_field" style="padding-left:0px;width:70%;" type="text" value="">
+                            </ion-col>
+                          </ion-row>
+                        </ion-row>
+                      
+          </ion-col>
+          <ion-col col-6 class="influencers_row">
+              <ion-row>  
+                <ion-col col-6  class="large_icon">
+                    <img src="../../assets/icon/icons/029-instagram.png" class="social_icons">
+                  </ion-col>
+                  <ion-col col-6>
+                      <ion-select [(ngModel)]="gender" class="select_menu">
+                          <ion-option value="f">Female</ion-option>
+                          <ion-option value="m">Male</ion-option>
+                        </ion-select>
+                      
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col col-9>
+                    Min Followers
+  
+                  </ion-col>
+             
+                     <ion-col col-3>
+                          <ion-select [(ngModel)]="gender" class="select_menu">
+                              <ion-option value="f">Female</ion-option>
+                              <ion-option value="m">Male</ion-option>
+                            </ion-select>
+                          
+                      </ion-col>
+               
+                </ion-row>
+                <ion-row>  
+                    <ion-col col-9 >
+                      Max Followers
+                      </ion-col>
+                      <ion-col col-3>
+                          <ion-select [(ngModel)]="gender" class="select_menu">
+                              <ion-option value="f">Female</ion-option>
+                              <ion-option value="m">Male</ion-option>
+                            </ion-select>
+                          
+                      </ion-col>
+                    </ion-row>
+                    <ion-row>  
+                        <ion-col col-10 >
+                          Engagements/Day
+                          </ion-col>
+                          <ion-col col-2>
+                              
+                              <input class="input_field" style="padding-left:0px;width:100%" type="text" value="">
+                          </ion-col>
+                        </ion-row>
+                        <ion-row>  
+                          <ion-row>
+                            <ion-col col-12 >
+                              Minimum Budget Req.
+                              </ion-col>
+                            </ion-row>
+                            <ion-row>
+                              <ion-col col-12>
+                                  
+                                  <input class="input_field" style="padding-left:0px;width:70%;" type="text" value="">
+                              </ion-col>
+                            </ion-row>
+                          </ion-row>
+                        
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            Campaign Budget
+          </ion-col>
+          <ion-col col-4>
+           
+                  <ion-col col-12>
+                      <!-- <ion-input placeholder="Text Input"></ion-input> -->
+                      
+                  <ion-input class="input_field" style="padding-left:0px;width:70%;" type="text"></ion-input>
+                    </ion-col>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button color="dark">Submit</button>
+          </ion-col> 
+        </ion-row>
+      </ion-grid>
+</ion-content>

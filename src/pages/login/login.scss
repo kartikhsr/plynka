@@ -1,0 +1,24 @@
+page-login {
+
+}
+.line-center{
+    margin:0;padding:0 10px;
+    background:#fff;
+    display:inline-block;
+}
+h6{
+    
+    text-align:center;
+    position:relative;
+    z-index:2;
+    
+}
+h6:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    border-top:solid 1px rgb(14, 6, 6);
+    z-index:-1;
+}
