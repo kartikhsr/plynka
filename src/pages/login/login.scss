@@ -6,14 +6,61 @@ page-login {
     background:#fff;
     display:inline-block;
 }
-h6{
+.center_login{
     
     text-align:center;
     position:relative;
     z-index:2;
     
 }
-h6:after{
+@media only screen and (min-width: 576px) {
+    .platform-ios{
+    
+        // color:blue;
+    }
+ }
+ @media only screen and (min-width: 768px) and (max-width: 991px){
+    .item-md{
+        padding-left:0px;
+    }
+    .border-box{
+        padding:2%;
+        border-radius:20px;
+        box-shadow: 2px 2px 4px #000000;
+        
+        border:2px solid black;
+    }
+    .platform-ios{
+        margin:auto;
+        width:40%;
+        display: block;
+        // color:blue;
+    }
+ }
+ @media only screen and (min-width: 992px) {
+     
+    .item-md{
+        padding-left:0px;
+    }
+    .border-box{
+        padding:2%;
+        border-radius:20px;
+        box-shadow: 2px 2px 4px #000000;
+        
+        border:2px solid black;
+    }
+    .platform-ios{
+        margin:auto;
+        width:40%;
+        display: block;
+        // color:blue;
+    }
+ }
+
+.platform-ios{
+    
+}
+.center_login:after{
     content:"";
     position:absolute;
     top:50%;

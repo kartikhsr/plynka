@@ -10,11 +10,20 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilePage } from '../pages/profile/profile';
 import { LoginPage } from '../pages/login/login';
 import { NotificationPage } from '../pages/notification/notification';
+import { PostAddPage } from '../pages/post-add/post-add';
+
+import { TabsInfluencersPage } from '../pages/tabs-influencers/tabs-influencers';
+import { FilterInfluencersPage } from '../pages/filter-influencers/filter-influencers';
+import { HomeInfluencersPage } from '../pages/home-influencers/home-influencers';
+import { NotificationInfluencersPage } from '../pages/notification-influencers/notification-influencers';
+import { ProfileInfluencersPage } from '../pages/profile-influencers/profile-influencers';
+import { SearchInfluencersPage } from '../pages/search-influencers/search-influencers';
+import {MsgInfluencersPage} from '../pages/msg-influencers/msg-influencers';
+import {CompInfluencersPage} from '../pages/comp-influencers/comp-influencers';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PostAddPage } from '../pages/post-add/post-add';
 @NgModule({
   declarations: [
     MyApp,
@@ -22,6 +31,14 @@ import { PostAddPage } from '../pages/post-add/post-add';
     ContactPage,
     PostDisplayPage,
     PostAddPage,
+    MsgInfluencersPage,
+    CompInfluencersPage,
+    TabsInfluencersPage,
+    FilterInfluencersPage,
+    HomeInfluencersPage,
+    NotificationInfluencersPage,
+    ProfileInfluencersPage,
+    SearchInfluencersPage,
     TabsPage,NotificationPage,LoginPage,ProfilePage
   ],
   imports: [
@@ -31,10 +48,19 @@ import { PostAddPage } from '../pages/post-add/post-add';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    MsgInfluencersPage,
+    CompInfluencersPage,
     AboutPage,
+    TabsInfluencersPage,
     ContactPage,
     PostDisplayPage,
     PostAddPage,
+    TabsInfluencersPage,
+    FilterInfluencersPage,
+    HomeInfluencersPage,
+    NotificationInfluencersPage,
+    ProfileInfluencersPage,
+    SearchInfluencersPage,
     TabsPage,NotificationPage,LoginPage,ProfilePage
   ],
   providers: [

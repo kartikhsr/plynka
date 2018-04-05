@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
-
+import {TabsInfluencersPage} from '../tabs-influencers/tabs-influencers';
 /**
  * Generated class for the LoginPage page.
  *
@@ -22,7 +22,11 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-  validate(){
+  facebook(){
+    
+    this.navCtrl.setRoot(TabsInfluencersPage);
+  }
+  google(){
     this.navCtrl.push(TabsPage);
   }
 }

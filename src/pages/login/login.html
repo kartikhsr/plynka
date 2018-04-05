@@ -5,25 +5,17 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons no margin>
-      <button ion-button icon-only>
-        <ion-icon name="create"></ion-icon>
-      </button>
-    </ion-buttons>
-
-    <ion-buttons end>
-      <button ion-button icon-only>
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Plynka</ion-title>
+  </ion-navbar>
 </ion-header>
 
-
-
 <ion-content padding>
-  <ion-list inset>
+  <div>
+  <ion-list class="platform-ios border-box">
   
       <ion-item>
         <ion-label floating>Username</ion-label>
@@ -39,20 +31,23 @@
       <div text-center>
         <p>No account yet? Create one</p>
       </div>
-
-      <h6><span  class="line-center">Or</span></h6>
+      <h6 class="center_login"><span  class="line-center">Or</span></h6>
       <br>      
-      <button ion-button block icon-left color="light">
+      <button (click)="facebook()" ion-button block icon-left color="light">
           <ion-icon name="logo-facebook"></ion-icon>
         <div>
-          
           <label>SIGN IN WITH FACEBOOK</label>
       </div>
     </button>
     <br>
-      <button ion-button block icon-left color="light"><ion-icon name="logo-google"></ion-icon>SIGN IN WITH GOOGLE</button>
-      
+          <button (click)="google()" ion-button block icon-left color="light">
+          <ion-icon name="logo-facebook"></ion-icon>
+        <div>
+          <label>SIGN IN WITH GOOGLE</label>
+      </div>
+    </button>
+     
      
     </ion-list>
-
+  </div>
 </ion-content>
