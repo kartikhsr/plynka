@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import {TabsInfluencersPage} from '../tabs-influencers/tabs-influencers';
+import {AngularFireAuth} from 'angularfire2/auth';
 /**
  * Generated class for the LoginPage page.
  *
@@ -16,14 +17,14 @@ import {TabsInfluencersPage} from '../tabs-influencers/tabs-influencers';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afAuth:AngularFireAuth, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
   facebook(){
-    
+    // this.afAuth.auth.createUserWithEmailAndPassword('kartikhsr85@gmail.com','@Yattin2005');
     this.navCtrl.setRoot(TabsInfluencersPage);
   }
   google(){

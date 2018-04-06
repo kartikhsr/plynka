@@ -20,10 +20,13 @@ import { ProfileInfluencersPage } from '../pages/profile-influencers/profile-inf
 import { SearchInfluencersPage } from '../pages/search-influencers/search-influencers';
 import {MsgInfluencersPage} from '../pages/msg-influencers/msg-influencers';
 import {CompInfluencersPage} from '../pages/comp-influencers/comp-influencers';
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireAuthModule} from 'angularfire2/auth';
 
-
+import {AngularFireAuth} from 'angularfire2/auth';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {FIREBASE_CONFIG} from './app.firebase.config';
 @NgModule({
   declarations: [
     MyApp,
@@ -43,7 +46,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(FIREBASE_CONFIG),
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -66,6 +71,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireAuth,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
