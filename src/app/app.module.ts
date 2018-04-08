@@ -2,6 +2,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { NavBarComponent } from '../components/nav-bar/nav-bar';
+
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -11,6 +13,9 @@ import { ProfilePage } from '../pages/profile/profile';
 import { LoginPage } from '../pages/login/login';
 import { NotificationPage } from '../pages/notification/notification';
 import { PostAddPage } from '../pages/post-add/post-add';
+import { PopOverPage} from '../pages/pop-over/pop-over';
+import { InfluencersPage } from '../pages/influencers/influencers';
+import { SearchPage} from '../pages/search/search';
 
 import { TabsInfluencersPage } from '../pages/tabs-influencers/tabs-influencers';
 import { FilterInfluencersPage } from '../pages/filter-influencers/filter-influencers';
@@ -30,13 +35,17 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
 @NgModule({
   declarations: [
     MyApp,
+    NavBarComponent,
     AboutPage,
     ContactPage,
     PostDisplayPage,
     PostAddPage,
+    PopOverPage,
+    SearchPage,
     MsgInfluencersPage,
     CompInfluencersPage,
     TabsInfluencersPage,
+    InfluencersPage,
     FilterInfluencersPage,
     HomeInfluencersPage,
     NotificationInfluencersPage,
@@ -53,7 +62,11 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    NavBarComponent,
+    SearchPage,
     MsgInfluencersPage,
+    PopOverPage,
+    InfluencersPage,
     CompInfluencersPage,
     AboutPage,
     TabsInfluencersPage,

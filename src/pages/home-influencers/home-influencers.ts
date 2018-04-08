@@ -22,8 +22,11 @@ export class HomeInfluencersPage {
     console.log('ionViewDidLoad HomeInfluencersPage');
   }
   flip() {
+    // console.log($(this).find('div:first-child').css('color','red'));
     
-    $('.card').toggleClass('flipped');
+  //  $(this).parent().closest('div').toggleClass('flipped');
+  let hel=$('this').add('div:first-child').attr('id');
+    alert(JSON.stringify(hel));
   }
   tog(){
    

@@ -22,8 +22,8 @@ export class SearchInfluencersPage {
     console.log('ionViewDidLoad SearchInfluencersPage');
   }
   msg(){
-   
-    this.navCtrl.push(MsgInfluencersPage);
+   console.log('here');
+    // this.navCtrl.push(MsgInfluencersPage);
   }
 
 }

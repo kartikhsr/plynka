@@ -9,10 +9,9 @@ import * as $ from 'jquery';
 export class PostDisplayPage {
 
   constructor(public navCtrl: NavController) {
-    console.log(this.navCtrl.getActive());
     
   }
   PostDisp(){
-    this.navCtrl.parent.select(3);
+    this.navCtrl.push(PostAddPage);
   }
 }
