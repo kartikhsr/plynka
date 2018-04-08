@@ -15,8 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProfileInfluencersPage {
   item:any;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.item=navParams.get('item');
+    if(navParams.get('item')){
+      this.item=navParams.get('item');
+    }else{
+      this.item='';
+    }
+    
   }
 
   ionViewDidLoad() {
