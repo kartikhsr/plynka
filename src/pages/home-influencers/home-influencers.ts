@@ -26,7 +26,8 @@ export class HomeInfluencersPage {
     
   //  $(this).parent().closest('div').toggleClass('flipped');
   let hel=$('this').add('div:first-child').attr('id');
-    alert(JSON.stringify(hel));
+  $('.card').toggleClass('flipped');
+    // alert(JSON.stringify(hel));
   }
   tog(){
    
