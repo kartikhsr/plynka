@@ -14,18 +14,20 @@ import * as $ from 'jquery';
   templateUrl: 'home-influencers.html',
 })
 export class HomeInfluencersPage {
-
+a:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+ this.a="a";
   }
-
+  
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomeInfluencersPage');
   }
-  flip() {
+  flip(a:any) {
     // console.log($(this).find('div:first-child').css('color','red'));
-    
+    console.log(a);
   //  $(this).parent().closest('div').toggleClass('flipped');
-  let hel=$('this').add('div:first-child').attr('id');
+  // console.log($(this).attr('id'));
+  // let hel=$('this').add('div:first-child').attr('id');
   $('.card').toggleClass('flipped');
     // alert(JSON.stringify(hel));
   }

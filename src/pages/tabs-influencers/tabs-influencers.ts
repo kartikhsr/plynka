@@ -7,6 +7,7 @@ import { PostDisplayPage } from '../post-display/post-display';
 import { NotificationInfluencersPage } from '../notification-influencers/notification-influencers';
 import { ProfileInfluencersPage } from '../profile-influencers/profile-influencers';
 
+import { ProfilePeoplePage } from '../profile-people/profile-people';
 import { FilterInfluencersPage } from '../filter-influencers/filter-influencers';
 /**
  * Generated class for the TabsInfluencersPage page.
@@ -25,7 +26,7 @@ export class TabsInfluencersPage {
   tab2Root = NotificationInfluencersPage;
   tab3Root = SearchInfluencersPage;
   tab4Root= FilterInfluencersPage;
-  tab5Root= ProfileInfluencersPage;
+  tab5Root= ProfilePeoplePage;
   
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

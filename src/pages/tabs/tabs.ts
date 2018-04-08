@@ -14,7 +14,7 @@ import { InfluencersPage } from '../influencers/influencers';
 export class TabsPage {
 
   tab1Root = PostDisplayPage;
-  tab2Root = AboutPage;
+  tab2Root = NotificationPage;
   tab3Root = SearchPage;
   tab4Root= InfluencersPage;
   tab5Root= ProfilePage;

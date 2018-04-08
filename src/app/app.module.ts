@@ -16,6 +16,7 @@ import { PostAddPage } from '../pages/post-add/post-add';
 import { PopOverPage} from '../pages/pop-over/pop-over';
 import { InfluencersPage } from '../pages/influencers/influencers';
 import { SearchPage} from '../pages/search/search';
+import { ProfilePeoplePage } from '../pages/profile-people/profile-people';
 
 import { TabsInfluencersPage } from '../pages/tabs-influencers/tabs-influencers';
 import { FilterInfluencersPage } from '../pages/filter-influencers/filter-influencers';
@@ -50,6 +51,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     HomeInfluencersPage,
     NotificationInfluencersPage,
     ProfileInfluencersPage,
+    ProfilePeoplePage,
     SearchInfluencersPage,
     TabsPage,NotificationPage,LoginPage,ProfilePage
   ],
@@ -69,6 +71,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     InfluencersPage,
     CompInfluencersPage,
     AboutPage,
+    ProfilePeoplePage,
     TabsInfluencersPage,
     ContactPage,
     PostDisplayPage,
