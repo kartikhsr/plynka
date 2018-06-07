@@ -1,3 +1,9 @@
+Node version: v8.5.0
+
+Cordova version: 8.0.0
+
+Config.xml file: 
+
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>plynka_final</name>
@@ -93,3 +99,82 @@
     <engine name="browser" spec="5.0.3" />
     <engine name="android" spec="7.0.0" />
 </widget>
+
+
+Plugins: 
+
+cordova-plugin-datepicker,cordova-plugin-device,cordova-plugin-filechooser,cordova-plugin-googleplus,cordova-plugin-ionic-keyboard,cordova-plugin-ionic-webview,cordova-plugin-splashscreen,cordova-plugin-telerik-imagepicker,cordova-plugin-whitelist
+
+Android platform:
+
+*************************************************************************
+The "android" command is deprecated.
+For manual SDK, AVD, and project management, please use Android Studio.
+For command-line tools, use tools/bin/sdkmanager and tools/bin/avdmanager
+*************************************************************************
+Running /Users/apple/Library/Android/sdk/tools/bin/avdmanager list target
+
+Loading local repository...                                                     [=========                              ] 25% Loading local repository...       [=========                              ] 25% Fetch remote repository...        [=========                              ] 25% Fetch remote repository...        [=========                              ] 25% Fetch remote repository...        [=======================================] 100% Fetch remote repository...       Available Android targets:
+----------
+id: 1 or "android-18"
+     Name: Android API 18
+     Type: Platform
+     API level: 18
+     Revision: 3
+----------
+id: 2 or "android-19"
+     Name: Android API 19
+     Type: Platform
+     API level: 19
+     Revision: 4
+----------
+id: 3 or "android-20"
+     Name: Android API 20
+     Type: Platform
+     API level: 20
+     Revision: 2
+----------
+id: 4 or "android-21"
+     Name: Android API 21
+     Type: Platform
+     API level: 21
+     Revision: 2
+----------
+id: 5 or "android-22"
+     Name: Android API 22
+     Type: Platform
+     API level: 22
+     Revision: 2
+----------
+id: 6 or "android-23"
+     Name: Android API 23
+     Type: Platform
+     API level: 23
+     Revision: 3
+----------
+id: 7 or "android-24"
+     Name: Android API 24
+     Type: Platform
+     API level: 24
+     Revision: 2
+----------
+id: 8 or "android-25"
+     Name: Android API 25
+     Type: Platform
+     API level: 25
+     Revision: 3
+----------
+id: 9 or "android-26"
+     Name: Android API 26
+     Type: Platform
+     API level: 26
+     Revision: 2
+----------
+id: 10 or "android-27"
+     Name: Android API 27
+     Type: Platform
+     API level: 27
+     Revision: 1
+
+
+

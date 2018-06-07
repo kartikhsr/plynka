@@ -20,6 +20,10 @@ page-post-add {
     background: transparent;
     border-bottom: 1px solid black;
 }
+.datetime-md{
+    border-bottom:1px solid black;
+    padding:0px;
+}
 .input_field_follower{
     border: 0;
     outline: 0;
@@ -32,7 +36,7 @@ page-post-add {
     left:0px;
 }
 .select_social_icons{
-    border:2px solid black;
+    border:3px solid #008000;
     border-radius:20px
 }
 h1, h2, h3, h4, h5, h6{

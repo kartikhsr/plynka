@@ -4,7 +4,7 @@ import { SearchInfluencersPage } from './search-influencers';
 
 @NgModule({
   declarations: [
-    SearchInfluencersPage,
+    // SearchInfluencersPage,
   ],
   imports: [
     IonicPageModule.forChild(SearchInfluencersPage),

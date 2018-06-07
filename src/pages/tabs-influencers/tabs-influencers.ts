@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomeInfluencersPage } from '../home-influencers/home-influencers';
 import { SearchInfluencersPage } from '../search-influencers/search-influencers';
-import { PostDisplayPage } from '../post-display/post-display';
+// import { PostDisplayPage } from '../post-display/post-display';
 
 import { NotificationInfluencersPage } from '../notification-influencers/notification-influencers';
-import { ProfileInfluencersPage } from '../profile-influencers/profile-influencers';
+// import { ProfileInfluencersPage } from '../profile-influencers/profile-influencers';
 
 import { ProfilePeoplePage } from '../profile-people/profile-people';
 import { FilterInfluencersPage } from '../filter-influencers/filter-influencers';

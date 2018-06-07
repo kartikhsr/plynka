@@ -11,5 +11,49 @@
 
 
 <ion-content padding>
+    <ion-row>
+        <ion-col col-6>
+            <img src="{{photo}}" style="width:150px;height:150px">
+
+          </ion-col>
+        <ion-col col-6>
+            <circle-progress
+            [percent]="progress"
+            [radius]="50"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+          ></circle-progress>
+          </ion-col>
+        </ion-row>
+   
+  <ion-list *ngIf=view inset>
+      <button ion-button block (click)="upload()">Upload a file</button>
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input type="text" #name1 value="{{name}}">{{name}}</ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input type="text" #email1 value="{{email}}">{{email}}</ion-input>
+      </ion-item>
+            <ion-item>
+              <ion-label>Interested domain</ion-label>
+              <ion-select #domain1 [(ngModel)]="domain3" multiple="true" cancelText="Nah" okText="Okay!" >
+                <ion-option value="{{domain}}" *ngFor="let domain of domains" [selected]="domain3==domain">{{domain}}</ion-option>
+              </ion-select>
+            </ion-item>
+            <button ion-button color="danger" round (click)='save()'>Save</button>
+            <br>
+            <br>
+            <button ion-button block color="secondary" *ngIf='google' (click)=' authenticatewithGoogleMethod()'>Authenticate Google</button>
+            <button ion-button block color="secondary"  *ngIf='facebook'>Authenticate Facebook</button>
+            <button ion-button block color="secondary"  *ngIf='instagram'  (click)=' authenticatewithInstagramMethod()'>Authenticate Instagram</button>
+        </ion-list>
+      
 
 </ion-content>

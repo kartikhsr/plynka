@@ -4,7 +4,7 @@ import { PopOverPage } from './pop-over';
 
 @NgModule({
   declarations: [
-    PopOverPage,
+    // PopOverPage,
   ],
   imports: [
     IonicPageModule.forChild(PopOverPage),

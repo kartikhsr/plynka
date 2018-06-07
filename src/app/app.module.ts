@@ -3,7 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { NavBarComponent } from '../components/nav-bar/nav-bar';
-
+import {File} from '@ionic-native/file';
+import {FileChooser} from '@ionic-native/file-chooser';
+import { HttpModule } from '@angular/http';
+// import { HttpClient, HttpErrorResponse} from '@angular/common/http';
+// import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { DatePicker } from '@ionic-native/date-picker';
+import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
+import { ImagePicker } from '@ionic-native/image-picker';
+import { GooglePlus } from '@ionic-native/google-plus';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -11,7 +20,7 @@ import { PostDisplayPage } from '../pages/post-display/post-display';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProfilePage } from '../pages/profile/profile';
 import { LoginPage } from '../pages/login/login';
-import { NotificationPage } from '../pages/notification/notification';
+// import { NotificationPage } from '../pages/notification/notification';
 import { PostAddPage } from '../pages/post-add/post-add';
 import { PopOverPage} from '../pages/pop-over/pop-over';
 import { InfluencersPage } from '../pages/influencers/influencers';
@@ -25,14 +34,26 @@ import { NotificationInfluencersPage } from '../pages/notification-influencers/n
 import { ProfileInfluencersPage } from '../pages/profile-influencers/profile-influencers';
 import { SearchInfluencersPage } from '../pages/search-influencers/search-influencers';
 import {MsgInfluencersPage} from '../pages/msg-influencers/msg-influencers';
-import {CompInfluencersPage} from '../pages/comp-influencers/comp-influencers';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireAuthModule} from 'angularfire2/auth';
+// import {CompInfluencersPage} from '../pages/comp-influencers/comp-influencers';
 
+import {AngularFireModule} from 'angularfire2';
 import {AngularFireAuth} from 'angularfire2/auth';
+import {AngularFireDatabaseModule} from 'angularfire2/database';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import {FIREBASE_CONFIG} from './app.firebase.config';
+// import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import {AuthService} from '../app/core/auth.service';
+
+
+const firebaseconfig={
+  apiKey: "AIzaSyCAse5hg9lV2tmM_CTE4K5rhYxh8lN5Fbo",
+  authDomain: "plynka-2230b.firebaseapp.com",
+  databaseURL: "https://plynka-2230b.firebaseio.com",
+  projectId: "plynka-2230b",
+  storageBucket: "plynka-2230b.appspot.com",
+  messagingSenderId: "920154514957"
+};
 @NgModule({
   declarations: [
     MyApp,
@@ -40,11 +61,10 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     AboutPage,
     ContactPage,
     PostDisplayPage,
-    PostAddPage,
     PopOverPage,
+    PostAddPage,
     SearchPage,
     MsgInfluencersPage,
-    CompInfluencersPage,
     TabsInfluencersPage,
     InfluencersPage,
     FilterInfluencersPage,
@@ -53,13 +73,26 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     ProfileInfluencersPage,
     ProfilePeoplePage,
     SearchInfluencersPage,
-    TabsPage,NotificationPage,LoginPage,ProfilePage
+    TabsPage,
+    LoginPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
+    AngularDateTimePickerModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG),
-    
+    AngularFireModule.initializeApp(firebaseconfig),
+    AngularFireDatabaseModule ,
+    HttpModule ,
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      radius: 70,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -69,7 +102,6 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     MsgInfluencersPage,
     PopOverPage,
     InfluencersPage,
-    CompInfluencersPage,
     AboutPage,
     ProfilePeoplePage,
     TabsInfluencersPage,
@@ -82,13 +114,21 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
     NotificationInfluencersPage,
     ProfileInfluencersPage,
     SearchInfluencersPage,
-    TabsPage,NotificationPage,LoginPage,ProfilePage
+    TabsPage,
+    LoginPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
+    FileChooser,
+    File,
+    DatePicker, 
+    ImagePicker,
+    GooglePlus,
     SplashScreen,
     AngularFireAuth,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthService
   ]
 })
 export class AppModule {}

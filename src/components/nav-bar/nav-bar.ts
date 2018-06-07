@@ -16,7 +16,6 @@ import {MsgInfluencersPage} from '../../pages/msg-influencers/msg-influencers';
 export class NavBarComponent {
 
   constructor(public popoverCtrl: PopoverController, public navCtrl:NavController) {
-    console.log('Hello NavBarComponent Component');
 
   }
   presentPopover(myEvent) {
@@ -26,7 +25,6 @@ export class NavBarComponent {
     });
   }
   msg(){
-    console.log('he');
      this.navCtrl.push(MsgInfluencersPage);
    }
  

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {MsgInfluencersPage} from '../msg-influencers/msg-influencers';
+// import {MsgInfluencersPage} from '../msg-influencers/msg-influencers';
 /**
  * Generated class for the SearchInfluencersPage page.
  *

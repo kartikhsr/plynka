@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App, ViewController} from 'ionic-angular';
 import {LoginPage} from '../login/login';
-
+import { AngularFireAuth } from "angularfire2/auth";
 /**
  * Generated class for the PopOverPage page.
  *
@@ -16,7 +16,7 @@ import {LoginPage} from '../login/login';
 })
 export class PopOverPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private app:App, public viewCtrl: ViewController) {
+  constructor(private afAuth:AngularFireAuth,public navCtrl: NavController, public navParams: NavParams, private app:App, public viewCtrl: ViewController) {
   }
 
   ionViewDidLoad() {
@@ -24,7 +24,7 @@ export class PopOverPage {
   }
   close(){
     this.viewCtrl.dismiss();
-    
+    this.afAuth.auth.signOut();
     this.app.getRootNav().setRoot(LoginPage);
   }
 }
